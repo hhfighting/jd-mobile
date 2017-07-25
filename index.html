@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <!-- meta:vp -->
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <!--导入css样式表 -->
+        <link rel="stylesheet" href="css/base.css">
+        <link rel="stylesheet" href="css/index.css">
+        <!-- 导入js -->
+        <script src="js/index.js"></script>
+    </head>
+    <body>
+      <!-- 最外层容器盒子 -->
+      <div class="jd-container">
+         <!-- 顶部的通栏 -->
+         <div class="jd-header">
+           <a href="#" class="header-logo"></a>
+           <span class="header-glass"></span>
+           <input type="search" placeholder="搜索" class="header-search">
+           <a href="#" class="header-login">登录</a>
+         </div>
+         <!-- 顶部的轮播图 -->
+         <div class="jd-banner">
+           <ul class="banner-images clearfix">
+             <li><a href="#"><img src="images/l8.jpg"></a></li>
+             <li><a href="#"><img src="images/l1.jpg"></a></li>
+             <li><a href="#"><img src="images/l2.jpg"></a></li>
+             <li><a href="#"><img src="images/l3.jpg"></a></li>
+             <li><a href="#"><img src="images/l4.jpg"></a></li>
+             <li><a href="#"><img src="images/l5.jpg"></a></li>
+             <li><a href="#"><img src="images/l6.jpg"></a></li>
+             <li><a href="#"><img src="images/l7.jpg"></a></li>
+             <li><a href="#"><img src="images/l8.jpg"></a></li>
+             <li><a href="#"><img src="images/l1.jpg"></a></li>
+           </ul>
+           <ul class="banner-index">
+             <li class="current"></li>
+             <li></li>
+             <li></li>
+             <li></li>
+             <li></li>
+             <li></li>
+             <li></li>
+             <li></li>
+           </ul>
+         </div>
+         <!-- 导航栏 -->
+         <div class="jd-nav">
+           <ul class="clearfix">
+             <li><a href="#"><img src="images/nav0.png" alt=""><p>分类查询</p></a>
+             </li>
+             <li><a href="#"><img src="images/nav1.png" alt=""><p>分类查询</p></a></li>
+             <li><a href="#"><img src="images/nav2.png" alt=""><p>分类查询</p></a></li>
+             <li><a href="#"><img src="images/nav3.png" alt=""><p>分类查询</p></a></li>
+             <li><a href="#"><img src="images/nav4.png" alt=""><p>分类查询</p></a></li>
+             <li><a href="#"><img src="images/nav5.png" alt=""><p>分类查询</p></a></li>
+             <li><a href="#"><img src="images/nav6.png" alt=""><p>分类查询</p></a></li>
+             <li><a href="#"><img src="images/nav7.png" alt=""><p>分类查询</p></a></li> 
+           </ul>  
+         </div>
+         <!-- 主要内容区域 -->
+         <div class="jd-main">
+           <!-- 第一个盒子需要特殊设置 -->
+           <div class="main-content">
+             <div class="content-top clearfix">
+               <span></span>
+               <p>掌上秒杀</p>
+               <ul class="f-l clearfix" id="timer">
+                 <li></li>
+                 <li></li>
+                 <li>:</li>
+                 <li></li>
+                 <li></li>
+                 <li>:</li>
+                 <li></li>
+                 <li></li>
+               </ul>
+               <a href="#">更多&gt;</a>
+             </div>
+             <div class="content-bottom">
+               <ul>
+                 <li><a href=""><img src="images/detail01.jpg" ></a><p>￥10.00</p><p>￥98.00</p></li>
+                 <li><a href=""><img src="images/detail02.jpg"></a><p>￥10.00</p><p>￥98.00</p></li>
+                 <li><a href=""><img src="images/detail01.jpg"></a><p>￥10.00</p><p>￥98.00</p></li>
+               </ul>
+             </div>
+           </div>
+           <!-- 第二个盒子 -->
+           <div class="main-content">
+             <div class="content-top">
+               <span>京东超市</span>  
+             </div>
+             <div class="content-bottom">
+               <ul class="clearfix">
+                 <li class="f-l b-r"><a href="#"><img src="images/cp1.jpg"></a></li>
+                 <li class="f-r b-b"><a href="#"><img src="images/cp2.jpg"></a></li>
+                 <li class="f-r"><a href="#"><img src="images/cp3.jpg"></a></li>
+               </ul> 
+             </div>
+           </div>
+           <!-- 第三个盒子 -->
+           <div class="main-content">
+             <div class="content-top">
+               <span>京东超市</span>  
+             </div>
+             <div class="content-bottom">
+               <ul class="clearfix">
+                 <li class="f-r b-l"><a href="#"><img src="images/cp1.jpg"></a></li>
+                 <li class="f-l b-b"><a href="#"><img src="images/cp2.jpg"></a></li>
+                 <li class="f-l"><a href="#"><img src="images/cp3.jpg"></a></li> 
+               </ul> 
+             </div>
+           </div>
+           <!-- 第四个盒子 -->
+           <div class="main-content">
+             <div class="content-top">
+               <span>京东超市</span>  
+             </div>
+             <div class="content-bottom">
+               <ul class="clearfix">
+                 <li class="f-r b-l"><a href="#"><img src="images/cp1.jpg"></a></li>
+                 <li class="f-l b-b"><a href="#"><img src="images/cp2.jpg"></a></li>
+                 <li class="f-l"><a href="#"><img src="images/cp3.jpg"></a></li> 
+               </ul> 
+             </div>
+           </div>
+         </div>
+      </div>
+      <script src="../bootstrap/js/jquery-1.11.1.min.js"></script>
+      <script>
+       $(function(){
+
+        var ul = document.getElementById("timer");
+        var timer = setInterval(fn,1);
+        function fn(){
+
+         var date = new Date();
+         var future = new Date("2017/7/21 23:40:00");
+         var timeSum = future.getTime() - date.getTime();
+         //得到的是两个时间之间的差  单位为毫秒
+       
+         var hour = parseInt(timeSum/1000/60/60);//小时
+         var minute = parseInt(timeSum/1000/60%60);//分钟
+         var second = parseInt(timeSum/1000%60);//秒钟
+        //为了让个位与十位的结果正确
+        var hour1 = hour>10?parseInt(hour/10):"0" ;
+        var hour2 = hour%10;
+        var minute1 = minute>10?parseInt(minute/10):"0";
+        var minute2 = minute%10;
+        var second1 = second>10?parseInt(second/10):"0";
+        var second2 = second%10;
+        
+        if(timeSum < 0){
+          ul.childNodes[1].innerHTML = 0;
+          ul.childNodes[3].innerHTML = 0;
+          ul.childNodes[7].innerHTML = 0;
+          ul.childNodes[9].innerHTML = 0;
+          ul.childNodes[13].innerHTML = 0;
+          ul.childNodes[15].innerHTML = 0;
+          clearInterval(timer);
+          return;
+        }
+        else{
+          ul.childNodes[1].innerHTML = hour1;
+          ul.childNodes[3].innerHTML = hour2;
+          ul.childNodes[7].innerHTML = minute1;
+          ul.childNodes[9].innerHTML = minute2;
+          ul.childNodes[13].innerHTML = second1;
+          ul.childNodes[15].innerHTML = second2;
+        }
+      }
+
+        })
+      </script>
+    </body>
+</html>

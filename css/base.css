@@ -1,0 +1,69 @@
+/*
+* @Author: user
+* @Date:   2017-07-17 09:58:41
+* @Last Modified by:   user
+* @Last Modified time: 2017-07-21 10:49:42
+*/
+/*
+* @Author: user
+* @Date:   2017-07-17 09:58:41
+* @Last Modified by:   user
+* @Last Modified time: 2017-07-17 14:36:20
+*/
+/* 通用样式 */
+*,::before,::after{
+	font-size: 16px;
+	margin: 0;
+	padding: 0;
+	/* 去点击高亮 */
+	-webkit-tap-highlight-color:transparent;
+	/*盒子大小不变，内容可变*/
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	/*统一设置文字,sans-serif移动端默认字体*/
+	font-family: "微软雅黑",sans-serif;
+
+}
+/*input标签去扁平化*/
+input{
+	border: none;
+	-webkit-apprance:none;
+}
+/*a标签去下滑线*/
+a{
+	text-decoration: none;
+}
+/*去掉小圆点*/
+ul,li{
+	list-style: none;
+}
+/*清除浮动*/
+.f-l{
+	float: left;
+}
+.f-r{
+	float: right;
+}
+.clearfix::before,.clearfix::after{
+	content: "";
+	display: block;
+	line-height: 0;
+	height: 0;
+	visibility: hidden;
+	clear: both;
+}
+/*边框的通用样式*/
+.b-l{
+	border-left: 1px solid gray;
+}
+.b-r{
+	border-right: 1px solid gray;
+}
+.b-t{
+	border-top: 1px solid gray;
+}
+.b-b{
+	border-bottom: 1px solid gray;
+}
+
